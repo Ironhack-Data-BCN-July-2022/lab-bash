@@ -2,112 +2,112 @@
 
 ## Intro
 
-Vamos a practicar con `bash`, un lenguaje de programación que se ejecuta en la línea de comandos!
+Let's practice with `bash`, a programming language that runs on the command line!
 
 
-## Entregable
+## Deliverable
 
-Abre el  jupyter notebook en esta carpeta llamado solutions.ipynb y ve escribiendo en él los títulos de los ejercicios en una celda, y en otra el comando que has utilizado para solucionar los ejercicios. 
+Open the jupyter notebook in this folder named solutions.ipynb and type in the exercise titles in one cell, and in another cell the command you used to solve the exercises. 
 
 ## Setup
 
-1. Ubícate en la carpeta en la que ejecutando en el terminal. Al ejecutar `ls` 
+1. Go to the folder where you are running in the terminal. When you run `ls` 
 ```console
 $ ls
 ```
 
-2. Deberías ver: 
+2. You should see: 
 ```console
 README.md lorem solutions.ipynb
 ```
-3. Intenta hacer todos los ejercicios sin cambiar de directorio. 
+3. Try to do all the exercises without changing directories. 
 
-## Ejercicios
+## Exercises
 
-* Imprime en consola `Hello World`.
+* Print `Hello World` on console.
 
-* Crea un directorio nuevo llamado `new_dir`.
+* Create a new directory named `new_dir`.
 
-* Elimina ese directorio.
+* Delete that directory.
 
-* Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero. 
+* Copy the `sed.txt` file inside the lorem folder to the lorem-copy folder. TIP: It may be necessary to create the lorem-copy folder first. 
 
-* Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola línea. 
+* Copy the other two files from the lorem folder to the lorem-copy folder in a single line. 
 
-* Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem. 
+* Displays the contents of the `sed.txt` file inside the lorem folder. 
 
-* Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
+* Displays the contents of the `at.txt` and `lorem.txt` files inside the lorem folder. 
 
-* Visualiza las primeras 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy 
+* Displays the first 3 lines of the `sed.txt` file inside the lorem-copy folder. 
 
-* Visualiza las ultimas 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy 
+* Display the last 3 lines of the file `sed.txt` inside the lorem-copy folder. 
 
-* Añade `Homo homini lupus.` al final de archivo `sed.txt` dentro de la carpeta lorem-copy. 
+* Adds `Homo homini lupus.` to the end of file `sed.txt` inside the lorem-copy folder. 
 
-* Visualiza las últimas 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupus.`. 
+* Display the last 3 lines of the `sed.txt` file inside the lorem-copy folder. You should now see `Homo homini lupus.`. 
 
-* Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
+* Replace all occurrences of `et` with `ET` from the `at.txt` file inside the lorem-copy folder. You must use `sed`. 
 
-* Encuentra al usuario activo en el sistema.
+* Find the active user on the system.
 
-* Encuentra dónde estás en tu sistema de ficheros.
+* Find where you are on your file system.
 
-* Lista los archivos que terminan por `.txt` en la carpeta lorem.
+* List the files ending with `.txt` in the lorem folder.
 
-* Cuenta el número de líneas que tiene el archivo `sed.txt` dentro de la carpeta lorem. 
+* Count the number of lines that the file `sed.txt` has inside the lorem folder. 
 
-* Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos.
+* Counts the number of **files** beginning with `lorem` that are in this directory and in internal directories.
 
-* Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
+* Find all occurrences of `et` in `at.txt` inside the lorem folder.
 
-* Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem. 
+* Count the number of occurrences of the string `et` in `at.txt` inside the lorem folder. 
 
-*  Cuenta el número de apariciones del string `et` en todos los archivos del directorio lorem-copy. 
+* Count the number of occurrences of the string `et` in all files in the lorem-copy directory. 
 
-## Ficheros bash
+## bash files
 
-Cualquier comando o comandos de bash se pueden almacenar en un fichero y ejecutar cuando queramos. 
-Obviamente puedes utilizar tu editor preferido. Creamos el fichero: 
+Any bash command or commands can be stored in a file and executed whenever you want. 
+Obviously you can use your favorite editor. We create the file: 
 ```
 $ touch list_files.sh
 ```
 
-E incluimos el contenido que queramos. En este caso listar ficheros:
+And we include the content we want. In this case list files:
 ```bash
 #!/bin/bash
 ls
 ```
 
-Ejecutamos el script:
+Run the script:
 ```
 $ bash list_files.sh
 ```
 
-Y veremos por consola el siguiente output. 
+And we will see by console the following output. 
 ```console
 README.md lorem solutions.ipynb
 ```
 
 ## Bonus
 
-* Almacena en una variable `name` tu nombre.
+* Store in a variable `name` your name.
 
-* Imprime esa variable.
+* Print that variable.
 
-* Crea un directorio nuevo que se llame como el contenido de la variable `name`.
+* Create a new directory named after the contents of the `name` variable.
 
-* Elimina ese directorio. 
+* Delete that directory. 
 
-* Muestra los procesos de forma jerárquica que se están ejecutando en tu ordenador:
-    1. Usando el comando top o htop
-    2. Usando el comando ps con argumentos
+* Displays the processes in hierarchical form that are running on your computer:
+    1. using the top or htop command.
+    2. Using the ps command with arguments
 
-* Muestra información sobre tu procesador por pantalla
+* Display information about your processor on the screen
 
-* Crea 3 alias y haz que estén disponibles cada vez que inicias sesión
+* Create 3 aliases and make them available every time you log in.
 
-* Comprime las carpetas lorem y lorem-copy en un archivo llamado lorem-compressed.tar.gz
+* Compress the lorem and lorem-copy folders into a file called lorem-compressed.tar.gz
 
-* Descomprime el archivo lorem-compressed.tar.gz en la carpeta lorem-uncompressed
+* Unzip the file lorem-compressed.tar.gz into the folder lorem-uncompressed
 
-* Crea un script bash para imprimir los numeros de 1 a 100.
+* Create a bash script to print the numbers from 1 to 100.
